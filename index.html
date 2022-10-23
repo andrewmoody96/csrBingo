@@ -5,26 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>zZSR Bingo</title>
-    <link href="/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1 class="text-4xl">zZSR Bingo</h1>
-    <article>
-        <h4>Welcome to zZSR Bingo!</h4>
-        <p>Play fair, and have fun. Make the workday fly by checking off these common customer phrases if (and when) you hear them. Drop a screenshot in the chat if you win!</p>
+    <header class="flex flex-row justify-evenly bg-gray-200">
+      <h1 class="text-4xl text-[#3E7091] my-3">zZSR Bingo</h1>
+      <button id="newGame" class="bg-[#3E7091] rounded-full text-white p-2 my-3 hover:bg-gray-300 hover:text-[#3E7091]">
+        New Game
+      </button>
+    </header>
+    <article class="mx-2 my-3">
+      <h4 class="text-center text-2xl">Welcome to zZSR Bingo!</h4>
+      <p class="text-center">
+        Play fair, and have fun. Make the workday fly by checking off these
+        common customer phrases if (and when) you hear them. Drop a screenshot
+        in the chat if you get a BINGO!
+      </p>
     </article>
-    <button id="newGame">New Game</button>
-    <div id="boardContainer">
-        <!-- append question tiles here using script.js -->
-        <p>Dummy Row 1</p>
-        <p>Dummy Row 2</p>
-        <p>Dummy Row 3</p>
-        <p>Dummy Row 4</p>
-        <p>Dummy Row 5</p>
+    <div id="boardContainer" class="p-2 mx-2 grid grid-cols-5 gap-4 text-xs rounded-md">
+      
     </div>
-    <footer>
-        <p class="text-red-900">This game is built for fun, and fun alone. If you take any issue with information on the site please email me by clicking <a href="mailto:andrew.moody96@gmail.com">here</a> and I will do my best to make it right. </p>
+    <footer class="fixed bottom-0 left-0 right-0 bg-gray-300">
+      <p class="text-black text-center my-3 text-xs mx-2">
+        This game is built for fun, and fun alone. If you take any issue with
+        information on the site please email me by clicking
+        <a class="text-blue-400" href="mailto:andrew.moody96@gmail.com">here</a>
+        and I will do my best to make it right.
+      </p>
     </footer>
   </body>
-  <!-- <script src="/script.js"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+  <link href="/style.css" rel="stylesheet" />
 </html>
